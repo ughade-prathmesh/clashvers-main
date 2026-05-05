@@ -1,0 +1,23 @@
+[
+  {
+    "id": "0cd81b8e-2163-40bc-b5e0-5fec50545d38",
+    "player1_id": "11111111-1111-1111-1111-111111111111",
+    "player2_id": null,
+    "player1_elo_delta": 0,
+    "player2_elo_delta": 0
+  },
+  {
+    "id": "562f4f8e-461b-4163-8cf5-69a44953f023",
+    "player1_id": "8baf94ed-df10-46c3-99f3-2f315257bf15",
+    "player2_id": null,
+    "player1_elo_delta": 0,
+    "player2_elo_delta": 0
+  },
+  {
+    "id": "94b71f12-943f-47d6-991e-3740a8a1ab71",
+    "player1_id": "459539e1-9402-461f-890b-0fe22408f8cb",
+    "player2_id": "2238b668-274b-47d2-bdc9-32285e7b5323",
+    "player1_elo_delta": -16,
+    "player2_elo_delta": 16
+  }
+]
