@@ -1,5 +1,6 @@
 import express from "express";
 import { createServer } from "http";
+import { register } from './metrics';
 import { Server, Socket } from "socket.io";
 import { createClient } from "@supabase/supabase-js";
 import cors from "cors";
@@ -81,6 +82,10 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("CodeWars/ClashVers WebSocket Backend is actively running!");
+});
+ app.get('/metrics', async (req, res) => {
+  res.set('Content-Type', register.contentType);
+  res.end(await register.metrics());
 });
 
 const httpServer = createServer(app);

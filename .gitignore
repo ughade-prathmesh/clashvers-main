@@ -9,3 +9,8 @@ build/
 coverage/
 *.log
 nul
+
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl

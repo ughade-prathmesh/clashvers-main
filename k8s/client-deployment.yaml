@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: clashvers-client
+  namespace: clashvers
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: clashvers-client
+  template:
+    metadata:
+      labels:
+        app: clashvers-client
+    spec:
+      containers:
+        - name: client
+          image: yourdockerhub/clashvers-client:latest
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "100m"
+            limits:
+              memory: "128Mi"
+              cpu: "200m"
+
